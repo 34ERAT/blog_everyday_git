@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Blog</title>
+  </head>
+  <body>
+    <h1>Git</h1>
+    <h2>what's Git</h2>
+    <p>
+      It is is a distributed version control system (DVCS) that tracks changes
+      in files and directories, allowing developers to collaborate on projects
+      and maintain a history of modifications
+    </p>
+    <h3>Whats version control</h3>
+    <p>
+      version control is a system that tracks and manages changes to files and
+      directories over time, allowing developers to easily revert to previous
+      versions, collaborate effectively, and understand the history of a
+      project.
+    </p>
+    <h3>Git as version control</h3>
+    <p>
+      Git, as a version control system, is a distributed system, meaning each
+      developer has their own complete copy of the project's history,
+      facilitating independent work and collaboration.
+    </p>
+    <h3>Other version Controls</h3>
+    <ol>
+      <li>
+        <strong>Mercurial </strong>Developers and businesses adore Mercurial for
+        its search capabilities, backup system, data import and expor
+      </li>
+      <li>
+        <strong>Apache Subversion</strong> is a version control system
+        distributed as open source under the Apache Licens
+      </li>
+      <li>
+        <strong>AWS CodeCommit</strong> is a secure, scalable, fully managed
+        version control tool that hosts private git repositories, similar to
+        that of GitHub and GitLab
+      </li>
+      <li>
+        <strong>Bitbucket.</strong> As a component of the Atlassian software
+        family, Bitbucket can be connected with other Atlassian products like
+        HipChat, Jira, and Bamboo.
+      </li>
+    </ol>
+    <p>This blog however will mainly focus on Git as a version control.</p>
+    <h2>Check If Installed</h2>
+    <h3>steps</h3>
+    <ul>
+      <li>Open terminal and type <strong>git -v</strong></li>
+      <li>If version number is returned then git is installed</li>
+    </ul>
+    <figure>
+      <img
+        src="./images/checkforgit.png"
+        width="300px"
+        alt="check is git is installed"
+      />
+      <figcaption>Check whether git is installed on your computer.</figcaption>
+    </figure>
+    <h2>Install git</h2>
+    <h3>Step to install git</h3>
+    <ol>
+      <li>On your browser search for <strong>git download</strong></li>
+      <li>
+        Pick stand alone git version compatible to your operating system Type
+      </li>
+      <li>Click on download</li>
+      <li>Locate the location of the downloded executable file and run it</li>
+      <li>Git installed message will be displayed</li>
+    </ol>
+    <h2>Configure Git</h2>
+    <p>To Configure, git must have been initilaized in the directory before.</p>
+    <h3>Whats a git repository</h3>
+    <p>
+      A Git repository is a <strong>virtual storage of your project</strong>. It
+      allows you to save versions of your code, which you can access when
+      needed.
+    </p>
+    <h3>Check If Git Is Initialized</h3>
+    <ul>
+      <li>on terminal in the directory type <strong>git status</strong></li>
+      <li>if error <strong>fatal </strong> then initialize git.</li>
+    </ul>
+
+    <h3>Initialize git</h3>
+    <ul>
+      <li>In the folder to initialize git open terminal</li>
+      <li>Type in <strong>git init</strong> press enter</li>
+    </ul>
+    <h3>Configure name and email</h3>
+    <h4>Steps to configure git</h4>
+    <ul>
+      <li>
+        In the terminal type
+        <strong>git config --global user.name USER_NAME</strong>
+      </li>
+      <li>Then <strong>git config --global user.emai USER_EMAIL </strong></li>
+    </ul>
+    <h2>Adding files to the staging area</h2>
+    <h3>What is the Staging Area in Git?</h3>
+    <p>
+      The staging area (also called the index) is a place where Git gathers
+      changes before committing them to the repository. It acts like a preview
+      zone for your next commit—you select exactly which changes should be
+      included. Only the files in the staging area will be committed when you
+      run git commit.
+    </p>
+    <h3>Diffrence between tracked and untracked files</h3>
+    <ul>
+      <li>
+        <strong>Tracked</strong>Files that Git is already aware of. They were in
+        a previous commit.
+      </li>
+      <li>
+        <strong>Untracked</strong>Files that are in your project folder but have
+        never been added to Git.
+      </li>
+    </ul>
+    <h3>Steps to stage files</h3>
+    <ul>
+      <li>on terminal <strong>git add. </strong> To add all files.</li>
+      <li><strong>git add FILE_NAMe</strong> to add aspecific file.</li>
+    </ul>
+    <h2>Commit changes</h2>
+    <p>
+      Files that are in your project folder but have never been added to Git.
+      Commit message should explain why the commit is made. Example, "correct
+      spelling error on index file"
+    </p>
+
+    <h3>Add commit</h3>
+
+    <p>
+      To commit, changes must be first be staged by use of
+      <strong>git add .</strong>
+    </p>
+    <h4>Check if changes ARE STAGED</h4>
+    <ul>
+      <li>On terminal enter <strong>git status</strong></li>
+      <p>Staged files will be displayed else stage the files</p>
+    </ul>
+    <h4>Steps to commit</h4>
+    <ul>
+      <li>
+        <strong>git commit -m "commit message". </strong>This will commit the
+        changes with message tag.
+      </li>
+    </ul>
+    <h2>Writing Good commit message</h2>
+    <p>
+      A good commit message should answer the question
+      <i>What will the commit do?</i>. For example a change on spelling eror on
+      the previous commit, the commit message should be
+      <u>correct spelling error</u>
+    </p>
+    <h2>View Past COMMITS</h2>
+    <p>
+      To view past commits open the terminal and switch to the brach you want to
+      use.
+    </p>
+    <h3>Steps to view past commits</h3>
+    <ul>
+      <li>
+        on terminal type<strong>git log</strong>. This will display all the
+        commits
+      </li>
+      <h4>View Commit as one line</h4>
+      <li><strong>git log --oneline</strong></li>
+    </ul>
+    <h2>Go back to particular commit</h2>
+    <p>
+      Git alows one to roll back to a particular commit in case of the new
+      version being unstable or contant crashing. To roll back to a commit
+      follow the steps below
+    </p>
+    <h3>Steps to roll backup</h3>
+    <ul>
+      <li>
+        Start by displaying all the commits by
+        <strong> git log --oneline</strong>
+      </li>
+      <li>On the logs displayed copy the commit <strong>hash</strong></li>
+      <li>
+        On terminal enter<strong>
+          git revert <i><commit-hash></commit-hash></i
+        ></strong>
+      </li>
+      <li>This will roll you back to your desired commit</li>
+    </ul>
+    <h2>Branches</h2>
+    <p>
+      On git a branch is a separate workspace where you can make changes and try
+      new ideas without affecting the main project.
+    </p>
+    <strong>importance of Branches</strong>
+    <ol>
+      <li>Developing a new feature</li>
+      <li>Fix a bug</li>
+      <li>Allows collaboration</li>
+    </ol>
+
+    <h3>Create a branch</h3>
+    <p>
+      To create to a branch, use git and branch name of branchand pass the name
+      of the branch to create.
+    </p>
+    <ol>
+      <li>git branch myfeature</li>
+    </ol>
+    <p>You can create a new branch and switch to it directly by.</p>
+    <br />
+    <ul>
+      <li>git switch -c branch name</li>
+    </ul>
+    <p>This will add a new brach.</p>
+    <br />
+    <h3>View branches</h3>
+    <ul>
+      <li>on terminal enter <strong>git branch</strong></li>
+      <li>The current branch will be highlighted in green</li>
+    </ul>
+    <h3>Rename a branch</h3>
+    <p>To rename a branch, insie that branch enter the command below.</p>
+    <h4>on a diffrent branch</h4>
+    <ul>
+      <li>git branch -m oldbranch newbranch</li>
+    </ul>
+    <h4>on same branch</h4>
+    <ul>
+      <li>
+        <strong>git branch -m newbranch</strong>
+      </li>
+    </ul>
+    <h3>Switching active branches</h3>
+    <p>
+      To switch to an existing branch, you can use git switch and pass the name
+      of the branch you want to switch to
+    </p>
+    <ul>
+      <li>
+        <strong>git switch branchname </strong>
+      </li>
+    </ul>
+    <h3>Merging a brach</h3>
+    <p>
+      Merging a branch in Git means combining the changes from one branch into
+      another. Typically, this happens when you want to bring the changes you've
+      made in a feature branch (or any other branch) into your main branch .
+    </p>
+    <h4>Steps to merge</h4>
+    <ul>
+      <li>Make sure you're on the branch you want to merge into</li>
+      <li>
+        Use the git merge command to merge another branch (like a feature
+        branch) into the current branch.
+      </li>
+      <li>
+        <strong>git merge branchtomergefrom </strong>
+      </li>
+    </ul>
+    <h3>Deleting a branch</h3>
+    <p>You can delete a local branch that you've finished with by</p>
+    <ul>
+      <li>In the brach you want to delete, enter</li>
+      <li>git branch -d branch-name</li>
+    </ul>
+    <h4>To forcefuly delete a brach</h4>
+    <p>
+      Use a capital flag -D to forcefully delete a brach that is yet to be fully
+      merged.
+    </p>
+    <ul>
+      <li>git branch -D feature/login-page</li>
+    </ul>
+
+    <h2>Next step</h2>
+    <p>
+      After learning about the above concepts, you should be comfortable to use
+      git for most basic operations. However for further details on git check
+      out on the following concepts
+    </p>
+    <ol>
+      <li>
+        <strong>Stashing </strong
+        ><a href="https://git-scm.com/docs/git-stash"> on Stashing </a>
+      </li>
+      <li>
+        <strong>Pull request </strong
+        ><a href="https://git-scm.com/docs/git-pull">on Git Pull</a>
+      </li>
+      <li>
+        <strong>Forking </strong
+        ><a
+          href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/fork-a-repo"
+          >on Forking</a
+        >
+      </li>
+    </ol>
+  </body>
+</html>
