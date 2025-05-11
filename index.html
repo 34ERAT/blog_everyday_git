@@ -54,6 +54,7 @@
       <li>Open terminal and type <strong>git -v</strong></li>
       <li>If version number is returned then git is installed</li>
     </ul>
+
     <figure>
       <img
         src="./images/checkforgit.png"
@@ -75,6 +76,7 @@
     </ol>
     <h2>Configure Git</h2>
     <p>To Configure, git must have been initilaized in the directory before.</p>
+    
     <h3>Whats a git repository</h3>
     <p>
       A Git repository is a <strong>virtual storage of your project</strong>. It
@@ -86,12 +88,24 @@
       <li>on terminal in the directory type <strong>git status</strong></li>
       <li>if error <strong>fatal </strong> then initialize git.</li>
     </ul>
+    <figure>
+      <img src="./images/git status.png" alt="git status">
+      <figcaption>
+        Check if git is initialized
+      </figcaption>
+    </figure>
 
     <h3>Initialize git</h3>
     <ul>
       <li>In the folder to initialize git open terminal</li>
       <li>Type in <strong>git init</strong> press enter</li>
     </ul>
+    <figure>
+      <img src="./images/git init.png" alt="initialize git">
+      <figcaption>
+        Initialize git
+      </figcaption>
+    </figure>
     <h3>Configure name and email</h3>
     <h4>Steps to configure git</h4>
     <ul>
@@ -101,6 +115,12 @@
       </li>
       <li>Then <strong>git config --global user.emai USER_EMAIL </strong></li>
     </ul>
+    <figure>
+      <img src="./images/git config.png" alt="git config">
+      <figcaption>
+        Configure git username and email.
+      </figcaption>
+    </figure>
     <h2>Adding files to the staging area</h2>
     <h3>What is the Staging Area in Git?</h3>
     <p>
@@ -126,6 +146,12 @@
       <li>on terminal <strong>git add. </strong> To add all files.</li>
       <li><strong>git add FILE_NAMe</strong> to add aspecific file.</li>
     </ul>
+    <figure>
+      <img src="./images/git add.png" alt="git add">
+      <figcaption>
+        Git add to stage files.
+      </figcaption>
+    </figure>
     <h2>Commit changes</h2>
     <p>
       Files that are in your project folder but have never been added to Git.
@@ -139,7 +165,8 @@
       To commit, changes must be first be staged by use of
       <strong>git add .</strong>
     </p>
-    <h4>Check if changes ARE STAGED</h4>
+    
+    <h4>Check If Changes Are Staged</h4>
     <ul>
       <li>On terminal enter <strong>git status</strong></li>
       <p>Staged files will be displayed else stage the files</p>
@@ -151,6 +178,12 @@
         changes with message tag.
       </li>
     </ul>
+    <figure>
+      <img src="./images/commit.png" alt="git commit">
+      <figcaption>
+        commit files adding commit message.
+      </figcaption>
+    </figure>
     <h2>Writing Good commit message</h2>
     <p>
       A good commit message should answer the question
@@ -158,7 +191,13 @@
       the previous commit, the commit message should be
       <u>correct spelling error</u>
     </p>
-    <h2>View Past COMMITS</h2>
+    <h2>View Past Commits</h2>
+    <figure>
+      <img src="./images/git log.png" alt="">
+      <figcaption>
+        Check for past commits.
+      </figcaption>
+    </figure>
     <p>
       To view past commits open the terminal and switch to the brach you want to
       use.
