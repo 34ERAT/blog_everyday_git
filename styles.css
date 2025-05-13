@@ -10,10 +10,14 @@ p,
 li {
   color: #333333;
 }
-li:hover{
-  color: brown;
+li{
+  margin-bottom: 5px;
+}
+a:hover{
+  color: #005999;
   font-size: large;
 }
+
 
 h1,
 h2,
@@ -33,3 +37,6 @@ a:visited {
 a:hover {
   color: #005999;
 }
+
+
+
