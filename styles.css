@@ -10,6 +10,10 @@ p,
 li {
   color: #333333;
 }
+li:hover{
+  color: brown;
+  font-size: large;
+}
 
 h1,
 h2,
